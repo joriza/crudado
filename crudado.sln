@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crudado", "crudado\crudado.csproj", "{A325EBBD-BA54-4339-983D-7C25A0F8F4BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A325EBBD-BA54-4339-983D-7C25A0F8F4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A325EBBD-BA54-4339-983D-7C25A0F8F4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A325EBBD-BA54-4339-983D-7C25A0F8F4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A325EBBD-BA54-4339-983D-7C25A0F8F4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6423F973-AEAE-4F7D-83E0-1DFB6F24A041}
+	EndGlobalSection
+EndGlobal
