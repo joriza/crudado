@@ -18,14 +18,25 @@ namespace crudado.Controllers
             return View(lista);
         }
 
+        [HttpGet]
         public ActionResult Guardar()
         {
             return View();
         }
 
-        public ActionResult Nuevo(PersonaModel modelo) { 
-            admin.Guardar (modelo);
-            return View("Guardar", modelo);
+        [HttpPost]
+        public ActionResult Guardar(PersonaModel M)
+        {
+            admin.Guardar(M);
+            //IEnumerable<PersonaModel> lista = admin.Consultar();
+            //return View("Index",lista);
+            return RedirectToAction("Index");
         }
+
+
+        //public ActionResult Nuevo(PersonaModel m) { 
+        //    admin.Guardar (m);
+        //    return View("Guardar", m);
+        //}
     }
 }

@@ -9,9 +9,10 @@ namespace crudado.Datos
 {
 	public class PersonaAdmin : Conexion
 	{
+		public PersonaAdmin():base() { }
 		public IEnumerable<PersonaModel> Consultar()
 		{
-			Conectar();
+			//Conectar();
 			List<PersonaModel> lista = new List<PersonaModel>();
 			try
 			{
@@ -34,7 +35,6 @@ namespace crudado.Datos
 			}
 			catch (Exception e)
 			{
-
 				Console.WriteLine(e.StackTrace);
 			}
 			finally
@@ -54,15 +54,14 @@ namespace crudado.Datos
                     CommandType = System.Data.CommandType.StoredProcedure
                 };
                 comando.Parameters.AddWithValue("@nombre", modelo.Nombre);
-                comando.Parameters.AddWithValue("@apellido", modelo.Nombre);
+                comando.Parameters.AddWithValue("@apellido", modelo.Apellido);
                 comando.Parameters.AddWithValue("@edad", modelo.Edad);
 				comando.ExecuteNonQuery();
             }
-			catch (Exception)
+			catch (Exception e)
 			{
-
-				throw;
-			}
+                Console.WriteLine(e.StackTrace);
+            }
 		}
 	}
 }

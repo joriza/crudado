@@ -9,6 +9,11 @@ namespace crudado.Datos
     public class Conexion
     {
         protected SqlConnection cnn;
+
+        public Conexion()
+        {
+            this.Conectar();
+        }
         protected void Conectar()
         {
             try
